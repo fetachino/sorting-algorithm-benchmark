@@ -36,6 +36,28 @@ g++ -std=c++17 -O2 main.cpp -o sorting-benchmark
 
 With Gnuplot installed, run `generate_all_plots.sh` to regenerate the charts.
 
+## Testing and verification
+
+The benchmark was verified by compiling with a C++17 compiler and checking that each algorithm produces sorted output for the generated input sizes. The committed `sorting_results.csv` records the comparison, swap, and total-operation counters used in the charts.
+
+```console
+g++ -std=c++17 -O2 -Wall -Wextra main.cpp -o sorting-benchmark
+./sorting-benchmark
+```
+
+This is an independent algorithm-analysis portfolio project; no formal course attribution is claimed in the source materials.
+
+## Testing and verification
+
+The benchmark was verified by compiling with a C++17 compiler and checking that each algorithm produces sorted output for the generated input sizes. The committed `sorting_results.csv` records the comparison, swap, and total-operation counters used in the charts.
+
+```console
+g++ -std=c++17 -O2 -Wall -Wextra main.cpp -o sorting-benchmark
+./sorting-benchmark
+```
+
+This is an independent algorithm-analysis portfolio project; no formal course attribution is claimed in the source materials.
+
 ## Skills demonstrated
 
 - C++ algorithm implementation
