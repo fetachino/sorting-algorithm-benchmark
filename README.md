@@ -1,6 +1,14 @@
 # Sorting Algorithm Benchmark
 
+[![C++](https://img.shields.io/badge/C++-17-00599C?logo=cplusplus&logoColor=white)](https://isocpp.org/)
+[![Gnuplot](https://img.shields.io/badge/Gnuplot-visualization-F0A202)](http://www.gnuplot.info/)
+[![Benchmark](https://img.shields.io/badge/Benchmark-instrumented-2A9D8F)](#measured-results)
+
 A C++ benchmark comparing insertion sort, merge sort, and quicksort across increasingly large randomized inputs. The program counts comparisons and swaps, exports results, and supports Gnuplot visualizations on linear and logarithmic scales.
+
+## Key finding
+
+At 10,000 elements, insertion sort required roughly **49.8 million** measured operations, compared with approximately **254 thousand** for merge sort and **253 thousand** for quicksort. The experiment makes the practical difference between quadratic and `n log n` growth visible.
 
 ## Measured results
 
@@ -36,6 +44,6 @@ With Gnuplot installed, run `generate_all_plots.sh` to regenerate the charts.
 - CSV export and Gnuplot visualization
 - Relating measured behavior to Big-O complexity
 
-## Author
+## About the author
 
-Ahmed Balde
+Built by **Ahmed Balde** to connect algorithm theory with measured runtime behavior. See more C++, Python, data, and software-engineering work on [GitHub](https://github.com/fetachino).
